@@ -1,3 +1,42 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
 body {
     margin: 1%;
+}
+a {
+    text-decoration: none;
+}
+.navigation {
+    list-style: none;
+    display: flex;
+    column-gap: 5px;
+
+}
+.box-color {
+    background-color: black;
+    color: white;
+}
+.wrap-title {
+    padding: 50px 0;
+    text-align: center;
+    height: 60%;
+}
+.info-text {
+    display: inline-flex;
+    width: 40%;
+}
+.wrap-galery {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    column-gap: 30px;
+}
+.footer {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
