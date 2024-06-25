@@ -1,3 +1,80 @@
-body {
-    margin: 1%;
+html, body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.navigation {
+    list-style: none;
+    display: flex;
+    column-gap: 5px;
+
+}
+.box-color {
+    background-color: black;
+    color: white;
+}
+.wrap-title {
+    padding: 50px 0;
+    text-align: center;
+    height: 60%;
+}
+.info-text {
+    display: inline-flex;
+    width: 40%;
+}
+.wrap-galery {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    column-gap: 30px;
+}
+.footer {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.wrap-video{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.title-second{
+    padding: 0 20px 10px 20px;
+    text-align: left;
+}
+
+.info-text-second{
+    padding: 10px 20px;
+    text-align: left;
+    width: 500px;
+}
+.wrap-table{
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.table-info {
+    width: 30%;
+    border: 1px solid;
+    
+}
+td {
+    padding: 5px 10px;
+}
+.header-row {
+    font-weight: 800;
+}
+.dark {
+    background-color:rgb(67, 65, 65);
+    color: white;
+}
+.title-background{
+    background-image: url(../img/background.jpg);
 }
