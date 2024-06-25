@@ -39,7 +39,10 @@ a {
 }
 
 .wrap-video{
-    padding: 50px 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
 }
 .title-second{
     padding: 0 20px 10px 20px;
@@ -53,4 +56,25 @@ a {
 }
 .wrap-table{
     padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.table-info {
+    width: 30%;
+    border: 1px solid;
+    
+}
+td {
+    padding: 5px 10px;
+}
+.header-row {
+    font-weight: 800;
+}
+.dark {
+    background-color:rgb(67, 65, 65);
+    color: white;
+}
+.title-background{
+    background-image: url(../img/background.jpg);
 }

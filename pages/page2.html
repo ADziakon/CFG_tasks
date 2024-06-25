@@ -17,7 +17,7 @@
     </header>
     <main>
         <main>
-            <div class="box-color wrap-title">
+            <div class="box-color wrap-title title-background">
                 <h1 class="title-second">Welcom to Page 2!</h1>
                 <p class="info-text-second">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -27,27 +27,31 @@
                 </p>
             </div>
             <div class="wrap-video">
-                <img src="./img/1_animal.jpg" alt="image one" width="400" height="270">
+                <video width="500" height="310" controls="controls" poster="../img/1_animal.jpg">               
+                    <source src="../video/1.MOV" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                        Тег video не поддерживается вашим браузером. 
+                    <a href="../video/1.MOV">Скачайте видео</a>.
+                </video>
                 
             </div>
             <div class="wrap-table">
-                <table>
-                    <tr class="row">
-                        <th>Language</th>
-                        <th>Difficulty</th>
-                        <th>Star rating</th>
+                <table class="table-info">
+                    <tr class="row header-row">
+                        <td>Language</td>
+                        <td>Difficulty</td>
+                        <td>Star rating</td>
                     </tr>
-                    <tr>
+                    <tr class="dark row">
                         <td>HTML</td>
                         <td>2</td>
                         <td>2</td>
                     </tr>
-                    <tr>
+                    <tr class="row">
                         <td>CSS</td>
                         <td>5</td>
                         <td>4</td>
                     </tr>
-                    <tr>
+                    <tr class="dark row">
                         <td>Javascript</td>
                         <td>7</td>
                         <td>5</td>
