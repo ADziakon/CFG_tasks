@@ -1,3 +1,13 @@
 body {
     margin: 1%;
 }
+
+.subtitle_1{
+    background-color: blueviolet;
+    border: 1px solid #050303
+}
+
+.subtitle_2{
+    background-color:brown;
+    border: 1px solid #080101
+}
