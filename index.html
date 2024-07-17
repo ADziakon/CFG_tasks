@@ -3,71 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/style.css">
-    <title>Homework lesson 1 - About me</title>
+    <title>Homework lesson 4 - Tracker</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">About me</a></li>
-                <li><a href="./pages/news.html" target="_blank">News</a></li>
+                <li><a href="#" target="_blank">News</a></li>
+                <li><a href="#" target="_blank">Contact</a></li>
+                <li><a href="#" target="_blank">Services</a></li>
+                <li><a href="#" target="_blank">Registration</a></li>
+                <li><a href="#" target="_blank">Homework</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <div>
-            <h1>Aksana Dziakanchuk</h1>
-            <img src="./img/me.jpg" width="200px" height="200px" alt="my_foto">
-            <h2>Summary</h2>
-            <p>Programmer from my education. System analyst at work, with experience in banking sector. <br/> Traveler for life. The words I live by: The impossible is possible.</p>
-            <h2>Education</h2>
-            <ol>
-                <li><b>2009-2013</b> - Minsk State Higher Radio
-                    Engineering College (MSHRC)
-                    Software engineer</li>
-                <li><b>2018-2020</b> - BSUIR, Software engineer</li>
-            </ol>
-            <h2>Hobby</h2>
-                <h4>1. Travel</h4>
-                <p>My favorite place - Japan, Malta, Singapore, Great Britain</p>
-                <h4>2. Reading books</h4>
-                <p>My favorite books - <b><i>all books by John P. Strelecky</i></b>, <b><i>Flowers for Algernon</i></b>, <b><i>The Top Five Regrets of the Dying</i></b></p>
-                <h4>3. To play the guitar</h4>
-                <p>At first I try to play belorussian songs most interesting for me(<a href="https://www.youtube.com/watch?v=KlvUinNcDIM">Prostyja slovy</a>), and some in english(<a href="https://www.youtube.com/watch?v=rm9coqlk8fY">Knockin' On Heaven's Door</a>)</p>
-            <h2>Contacts</h2>
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Link</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Email</td>
-                        <td>a.dziakanchuk@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Inst</td>
-                        <td><a href="https://www.instagram.com/sene4ko/" target="_blank">Sene4ko</a></td>
-                    </tr>
-                    <tr>
-                        <td>Linkedin</td>
-                        <td><a href="https://www.linkedin.com/in/oksana-dyakonchuk-54329386/" target="_blank">Aksana Dziakanchuk</a></td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="wrap card card-body p-5">
+            <h1 class="title center">Homework tracker</h1>
+            <form class="d-flex justify-content-center align-items-center mb-4">
+                <div data-mdb-input-init class="form-outline flex-fill">
+                    <input type="text" class="add-item form-control" id="new-task" placeholder="New task..." />
+                    <!-- <label class="form-label" for="new-task">New task...</label> -->
+                </div>
+                <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-info ms-2">Add</button>
+            </form>
+            <div class="item-status-wrap">
+                <nav class="menu-status">
+                    <ul class="items-status nav nav-tabs mb-4 pb-2">
+                        <li class="nav-item item-status all">
+                            <a class="nav-link active" id="ex1-tab-1" data-mdb-tab-init href="#ex1-tabs-1" role="tab"
+                            aria-controls="ex1-tabs-1" aria-selected="true">All</a>
+                        </li>
+                        <li class="nav-item item-status active">
+                            <a class="nav-link" id="ex1-tab-2" data-mdb-tab-init href="#ex1-tabs-2" role="tab"
+                            aria-controls="ex1-tabs-2" aria-selected="false">Active</a>
+                        </li>
+                        <li class="nav-item item-status completed">
+                            <a class="nav-link" id="ex1-tab-3" data-mdb-tab-init href="#ex1-tabs-3" role="tab"
+                            aria-controls="ex1-tabs-3" aria-selected="false">Completed</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="items-wrap tab-content" id="ex1-content">
+                <div class="item-wrap tab-pane fade show active" id="ex1-tabs-1" role="tabpanel"
+                aria-labelledby="ex1-tab-1">
+                <ul class="list-group mb-0">
+                    <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                      style="background-color: #f4f6f7;">
+                      <input class="item-check form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
+                      <label class="item-text">Hometask 1</label>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                    style="background-color: #f4f6f7;">
+                    <input class="item-check form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
+                    <label class="item-text">Hometask 2</label>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center border-0 mb-2 rounded"
+                  style="background-color: #f4f6f7;">
+                  <input class="item-check form-check-input me-2" type="checkbox" value="" aria-label="..."  />
+                  <label class="item-text">Hometask 3</label>
+                </li>
+                </ul>
+                    
+                </div>
+                
+            </div>
         </div>
-
     </main>
     <footer>
-        <div>
-            <p>
+        <div class="footer">
+            <p class="text-footer">
                 Made by Aksana ©2024 with GFC
                 <a href="https://github.com/ADziakon" target="_blank">My GitHub</a>
             </p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
